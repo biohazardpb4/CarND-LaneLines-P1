@@ -8,8 +8,8 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-// names=$(ls | sed s/[0-9]//g | uniq);for fn in $names; do echo ["$fn"]: "./test_images_output/$fn"001 '"Color"'; done
-// names=$(ls | sed s/[0-9]//g | uniq);for fn in $names; do echo ![alt text]["$fn"]; done
+[//] names=$(ls | sed s/[0-9]//g | uniq);for fn in $names; do echo ["$fn"]: "./test_images_output/$fn"001 '"Color"'; done
+[//] names=$(ls | sed s/[0-9]//g | uniq);for fn in $names; do echo ![alt text]["$fn"]; done
 
 [canny_region_merged_color_selection_white_selected_challenge-]: ./test_images_output/canny_region_merged_color_selection_white_selected_challenge-010 "Color"
 [merged_color_selection_white_selected_challenge-]: ./test_images_output/merged_color_selection_white_selected_challenge-010 "Color"
@@ -18,6 +18,7 @@ The goals / steps of this project are the following:
 [white_selected_challenge-]: ./test_images_output/white_selected_challenge-010 "Color"
 [with_lanes_region_merged_color_selection_white_selected_challenge-]: ./test_images_output/with_lanes_region_merged_color_selection_white_selected_challenge-010 "Color"
 [yellow_selected_challenge-]: ./test_images_output/yellow_selected_challenge-010 "Color"
+[challenge]: ./test_videos_output/challenge.gif "Color"
 
 
 ---
@@ -57,6 +58,9 @@ My pipeline consists of 6 steps:
 
 In order to draw a single line on the left and right lanes, I modified the last step of the pipeline to split into two groups based on slope sign, and average each group's slopes and x intercepts.
 
+Final video:
+
+![alt text][challenge]
 
 ### 2. Identify potential shortcomings with your current pipeline
 
